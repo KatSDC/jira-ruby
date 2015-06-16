@@ -85,6 +85,10 @@ module JIRA
       JIRA::Resource::ComponentFactory.new(self)
     end
 
+    def Group # :nodoc:
+      JIRA::Resource::GroupFactory.new(self)
+    end
+
     def User # :nodoc:
       JIRA::Resource::UserFactory.new(self)
     end
